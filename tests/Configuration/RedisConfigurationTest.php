@@ -1,10 +1,10 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
 use Auryn\Injector;
-use Equip\Configuration\RedisConfiguration;
-use Equip\Env;
+use Minormous\Configuration\RedisConfiguration;
+use Minormous\Env;
 use PHPUnit_Framework_TestCase as TestCase;
 use Redis;
 

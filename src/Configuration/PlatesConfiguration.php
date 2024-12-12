@@ -1,6 +1,6 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
 use League\Plates\Engine;

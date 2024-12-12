@@ -1,8 +1,8 @@
 <?php
 
-namespace EquipTests\Fake;
+namespace MinormousTests\Fake;
 
-use Equip\Handler\ExceptionHandler;
+use Minormous\Framework\Handler\ExceptionHandler;
 use Exception;
 use Psr\Http\Message\ResponseInterface;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace EquipTests\Handler;
+namespace MinormousTests\Handler;
 
-use EquipTests\DirectoryTestCase;
-use Equip\Directory;
-use Equip\Handler\ActionHandler;
-use Equip\Handler\DispatchHandler;
+use MinormousTests\DirectoryTestCase;
+use Minormous\Framework\Directory;
+use Minormous\Framework\Handler\ActionHandler;
+use Minormous\Framework\Handler\DispatchHandler;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequest;
 use Zend\Diactoros\Uri;
@@ -56,7 +56,7 @@ class DispatchHandlerTest extends DirectoryTestCase
     }
 
     /**
-     * @expectedException \Equip\Exception\HttpException
+     * @expectedException \Minormous\Exception\HttpException
      * @expectedExceptionRegExp /cannot find any resource at/i
      */
     public function testNotFoundException()
@@ -76,7 +76,7 @@ class DispatchHandlerTest extends DirectoryTestCase
     }
 
     /**
-     * @expectedException \Equip\Exception\HttpException
+     * @expectedException \Minormous\Exception\HttpException
      * @expectedExceptionRegExp /cannot access resource .* using method/i
      */
     public function testMethodNotAllowedException()

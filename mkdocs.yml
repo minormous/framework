@@ -1,4 +1,4 @@
-site_name: Equip Framework
+site_name: Minormous Framework
 theme: 'readthedocs'
 pages:
 - Framework: index.md

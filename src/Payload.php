@@ -1,8 +1,8 @@
 <?php
 
-namespace Equip;
+namespace Minormous\Framework;
 
-use Equip\Adr\PayloadInterface;
+use Minormous\Adr\PayloadInterface;
 
 class Payload implements PayloadInterface
 {

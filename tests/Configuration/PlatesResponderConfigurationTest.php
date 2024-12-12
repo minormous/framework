@@ -1,11 +1,11 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
-use Equip\Configuration\AurynConfiguration;
-use Equip\Configuration\PlatesResponderConfiguration;
-use Equip\Formatter\PlatesFormatter;
-use Equip\Responder\FormattedResponder;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Configuration\PlatesResponderConfiguration;
+use Minormous\Formatter\PlatesFormatter;
+use Minormous\Responder\FormattedResponder;
 use League\Plates\Engine;
 
 class PlatesResponderConfigurationTest extends ConfigurationTestCase

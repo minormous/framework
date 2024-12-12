@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Responder;
+namespace MinormousTests\Responder;
 
-use Equip\Payload;
-use Equip\Responder\StatusResponder;
+use Minormous\Framework\Payload;
+use Minormous\Responder\StatusResponder;
 use Lukasoppermann\Httpstatus\Httpstatus;
 use PHPUnit_Framework_TestCase as TestCase;
 use Psr\Http\Message\ResponseInterface;

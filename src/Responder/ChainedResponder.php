@@ -1,12 +1,12 @@
 <?php
 
-namespace Equip\Responder;
+namespace Minormous\Framework\Responder;
 
-use Equip\Adr\PayloadInterface;
-use Equip\Adr\ResponderInterface;
-use Equip\Exception\ResponderException;
-use Equip\Resolver\ResolverTrait;
-use Equip\Structure\Set;
+use Minormous\Adr\PayloadInterface;
+use Minormous\Adr\ResponderInterface;
+use Minormous\Framework\Exception\ResponderException;
+use Minormous\Framework\Resolver\ResolverTrait;
+use Minormous\Structure\Set;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Relay\ResolverInterface;

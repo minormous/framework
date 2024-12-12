@@ -1,8 +1,8 @@
 <?php
 
-namespace Equip\Handler;
+namespace Minormous\Framework\Handler;
 
-use Equip\Exception\HttpException;
+use Minormous\Exception\HttpException;
 use Exception;
 use InvalidArgumentException;
 use Negotiation\Negotiator;
@@ -76,11 +76,9 @@ class ExceptionHandler
             return $next($request, $response);
         } catch (Exception $e) {
             if ($this->logger) {
-                if ($e instanceof HttpException) {
-                    $this->logger->debug($e->getMessage(), ['exception' => $e]);
-                } else {
-                    $this->logger->error($e->getMessage(), ['exception' => $e]);
-                }
+                $this->logger->error($e->getMessage(), [
+                    'exception' => $e,
+                ]);
             }
 
             $type = $this->type($request);
@@ -103,16 +101,13 @@ class ExceptionHandler
                 $response = $e->withResponse($response);
             }
 
-            if ($this->preferences->displayDebug()) {
+            $handler = $this->handler($type);
+            $this->whoops->pushHandler($handler);
 
-                $handler = $this->handler($type);
-                $this->whoops->pushHandler($handler);
+            $body = $this->whoops->handleException($e);
+            $response->getBody()->write($body);
 
-                $body = $this->whoops->handleException($e);
-                $response->getBody()->write($body);
-
-                $this->whoops->popHandler();
-            }
+            $this->whoops->popHandler();
 
             return $response;
         }

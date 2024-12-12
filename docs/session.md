@@ -1,18 +1,18 @@
 # Session
 
-[equip/session](https://github.com/equip/session) is an optional library for using sessions in Equip applications.
+[minormous/session](https://github.com/minormous/session) is an optional library for using sessions in Minormous applications.
 
 The benefit of using session objects instead of a global variable is primarily in testing, where the session object can be mocked and operations verified. Using session objects also makes it much easier to switch to a distributed session storage as your application scales.
 
 ## Configuration
 
-To use the [native session](https://github.com/equip/session/blob/master/src/NativeSession.php) implementation the [configuration](https://github.com/equip/session/blob/master/src/Configuration/SessionConfiguration.php) must be enabled in the [application bootstrap](/en/latest/#bootstrap):
+To use the [native session](https://github.com/minormous/session/blob/master/src/NativeSession.php) implementation the [configuration](https://github.com/minormous/session/blob/master/src/Configuration/SessionConfiguration.php) must be enabled in the [application bootstrap](/en/latest/#bootstrap):
 
 ```php
-Equip\Application::build()
+Minormous\Application::build()
 ->setConfiguration([
     // ...
-    Equip\Configuration\SessionConfiguration::class,
+    Minormous\Configuration\SessionConfiguration::class,
 ])
 // ...
 ```
@@ -22,8 +22,8 @@ Equip\Application::build()
 ```php
 namespace Acme\Domain;
 
-use Equip\SessionInterface;
-use Equip\Adr\DomainInterface;
+use Minormous\SessionInterface;
+use Minormous\Adr\DomainInterface;
 
 class WidgetDomain implements DomainInterface
 {
@@ -47,7 +47,7 @@ class WidgetDomain implements DomainInterface
 
 ## Usage
 
-The [session object](https://github.com/equip/session/blob/master/src/SessionInterface.php) can be modified using methods or [with array operations](http://php.net/arrayaccess):
+The [session object](https://github.com/minormous/session/blob/master/src/SessionInterface.php) can be modified using methods or [with array operations](http://php.net/arrayaccess):
 
 ```php
 // Set a value using object methods:

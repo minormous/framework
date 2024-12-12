@@ -1,15 +1,15 @@
 <?php
 
-namespace EquipTests\Handler;
+namespace MinormousTests\Handler;
 
 use Auryn\Injector;
-use Equip\Configuration\AurynConfiguration;
-use Equip\Configuration\ConfigurationInterface;
-use Equip\Configuration\WhoopsConfiguration;
-use Equip\Env;
-use Equip\Exception\HttpException;
-use Equip\Handler\ExceptionHandler;
-use EquipTests\Configuration\ConfigurationTestCase;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Configuration\ConfigurationInterface;
+use Minormous\Configuration\WhoopsConfiguration;
+use Minormous\Env;
+use Minormous\Framework\Exception\HttpException;
+use Minormous\Framework\Handler\ExceptionHandler;
+use MinormousTests\Configuration\ConfigurationTestCase;
 use PHPUnit_Framework_TestCase as TestCase;
 use Psr\Log\LoggerInterface;
 use Zend\Diactoros\Response;

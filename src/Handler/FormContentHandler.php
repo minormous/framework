@@ -1,6 +1,6 @@
 <?php
 
-namespace Equip\Handler;
+namespace Minormous\Framework\Handler;
 
 use Relay\Middleware\FormContentHandler as AbstractHandler;
 

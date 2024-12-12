@@ -1,6 +1,6 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
 use Redis;
@@ -14,7 +14,7 @@ class RedisConfiguration implements ConfigurationInterface
      */
     public function apply(Injector $injector)
     {
-        $injector->prepare(Redis::class, function($redis) {
+        $injector->prepare(Redis::class, function ($redis) {
             $redis->connect(
                 $this->env->getValue('REDIS_HOST', '127.0.0.1'),
                 $this->env->getValue('REDIS_PORT', 6379)

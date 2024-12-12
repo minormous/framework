@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Handler;
+namespace MinormousTests\Handler;
 
-use Equip\Env;
-use Equip\Handler\ExceptionHandlerPreferences;
+use Minormous\Env;
+use Minormous\Framework\Handler\ExceptionHandlerPreferences;
 use PHPUnit_Framework_TestCase as TestCase;
 use Whoops\Handler\JsonResponseHandler;
 use Whoops\Handler\PlainTextHandler;

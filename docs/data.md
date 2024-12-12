@@ -1,14 +1,14 @@
 # Data
 
-[equip/data](https://github.com/equip/data) is an optional library for creating a data layer in Equip applications.
+[minormous/data](https://github.com/minormous/data) is an optional library for creating a data layer in Minormous applications.
 
 ## Basic Example
 
 ```php
 namespace Acme;
 
-use Equip\Data\EntityInterface;
-use Equip\Data\Traits\EntityTrait;
+use Minormous\Data\EntityInterface;
+use Minormous\Data\Traits\EntityTrait;
 
 class User implements EntityInterface
 {

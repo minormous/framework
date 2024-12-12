@@ -1,6 +1,6 @@
 <?php
 
-namespace Equip\Exception;
+namespace Minormous\Framework\Exception;
 
 use Psr\Http\Message\ResponseInterface;
 use RuntimeException;

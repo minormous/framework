@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Formatter;
+namespace MinormousTests\Formatter;
 
-use Equip\Formatter\HtmlFormatter;
-use Equip\Payload;
+use Minormous\Framework\Formatter\HtmlFormatter;
+use Minormous\Framework\Payload;
 use PHPUnit_Framework_TestCase as TestCase;
 
 class HtmlFormatterTest extends TestCase

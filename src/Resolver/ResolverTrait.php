@@ -1,6 +1,6 @@
 <?php
 
-namespace Equip\Resolver;
+namespace Minormous\Framework\Resolver;
 
 trait ResolverTrait
 {

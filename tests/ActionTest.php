@@ -1,13 +1,13 @@
 <?php
 
-namespace EquipTests;
+namespace MinormousTests;
 
-use Equip\Action;
-use Equip\Adr\DomainInterface;
-use Equip\Adr\InputInterface;
-use Equip\Adr\ResponderInterface;
-use Equip\Input;
-use Equip\Responder\ChainedResponder;
+use Minormous\Framework\Action;
+use Minormous\Adr\DomainInterface;
+use Minormous\Adr\InputInterface;
+use Minormous\Adr\ResponderInterface;
+use Minormous\Framework\Input;
+use Minormous\Framework\Responder\ChainedResponder;
 use PHPUnit_Framework_TestCase as TestCase;
 
 class ActionTest extends TestCase

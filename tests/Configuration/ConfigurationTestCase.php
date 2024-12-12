@@ -1,6 +1,6 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
 use Auryn\Injector;
 use PHPUnit_Framework_TestCase as TestCase;

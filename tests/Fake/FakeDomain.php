@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Fake;
+namespace MinormousTests\Fake;
 
-use Equip\Adr\DomainInterface;
-use Equip\Payload;
+use Minormous\Adr\DomainInterface;
+use Minormous\Framework\Payload;
 
 class FakeDomain implements DomainInterface
 {

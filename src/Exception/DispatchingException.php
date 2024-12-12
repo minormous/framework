@@ -2,9 +2,9 @@
 
 namespace Minormous\Framework\Exception;
 
-use DomainException;
+use InvalidArgumentException;
 
-class MiddlewareException extends DomainException
+class DispatchingException extends InvalidArgumentException
 {
     /**
      * @param string|object $spec
@@ -18,7 +18,7 @@ class MiddlewareException extends DomainException
         }
 
         return new static(sprintf(
-            'Middleware `%s` is not invokable',
+            'Dispatcher `%s` is not invokable',
             $spec
         ));
     }

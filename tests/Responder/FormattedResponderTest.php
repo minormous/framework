@@ -1,14 +1,14 @@
 <?php
 
-namespace EquipTests\Responder;
+namespace MinormousTests\Responder;
 
-use EquipTests\Configuration\ConfigurationTestCase;
-use Equip\Configuration\AurynConfiguration;
-use Equip\Exception\FormatterException;
-use Equip\Formatter\FormatterInterface;
-use Equip\Formatter\JsonFormatter;
-use Equip\Payload;
-use Equip\Responder\FormattedResponder;
+use MinormousTests\Configuration\ConfigurationTestCase;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Exception\FormatterException;
+use Minormous\Formatter\FormatterInterface;
+use Minormous\Formatter\JsonFormatter;
+use Minormous\Payload;
+use Minormous\Responder\FormattedResponder;
 use Negotiation\Negotiator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

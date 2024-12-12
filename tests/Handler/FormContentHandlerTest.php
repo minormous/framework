@@ -1,7 +1,7 @@
 <?php
-namespace EquipTests\Handler;
+namespace MinormousTests\Handler;
 
-use Equip\Handler\FormContentHandler;
+use Minormous\Framework\Handler\FormContentHandler;
 use Zend\Diactoros\Response;
 
 class FormContentHandlerTest extends ContentHandlerTestCase

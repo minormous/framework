@@ -1,14 +1,14 @@
 <?php
 
-namespace Equip\Responder;
+namespace Minormous\Framework\Responder;
 
-use Equip\Adr\PayloadInterface;
-use Equip\Adr\ResponderInterface;
-use Equip\Exception\FormatterException;
-use Equip\Formatter\FormatterInterface;
-use Equip\Formatter\JsonFormatter;
-use Equip\Resolver\ResolverTrait;
-use Equip\Structure\SortedDictionary;
+use Minormous\Adr\PayloadInterface;
+use Minormous\Adr\ResponderInterface;
+use Minormous\Framework\Exception\FormatterException;
+use Minormous\Framework\Formatter\FormatterInterface;
+use Minormous\Framework\Formatter\JsonFormatter;
+use Minormous\Framework\Resolver\ResolverTrait;
+use Minormous\Structure\SortedDictionary;
 use Negotiation\Negotiator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

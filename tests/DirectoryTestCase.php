@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests;
+namespace MinormousTests;
 
-use Equip\Action;
-use Equip\Adr\DomainInterface;
+use Minormous\Framework\Action;
+use Minormous\Adr\DomainInterface;
 use PHPUnit_Framework_TestCase as TestCase;
 
 abstract class DirectoryTestCase extends TestCase

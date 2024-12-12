@@ -1,8 +1,8 @@
 <?php
 
-namespace EquipTests;
+namespace MinormousTests;
 
-use Equip\Input;
+use Minormous\Framework\Input;
 use PHPUnit_Framework_TestCase as TestCase;
 use Psr\Http\Message\UploadedFileInterface;
 use Zend\Diactoros\ServerRequest;

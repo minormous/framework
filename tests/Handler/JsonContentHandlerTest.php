@@ -1,8 +1,8 @@
 <?php
-namespace EquipTests\Handler;
+namespace MinormousTests\Handler;
 
-use Equip\Exception\HttpBadRequestException;
-use Equip\Handler\JsonContentHandler;
+use Minormous\Framework\Exception\HttpBadRequestException;
+use Minormous\Framework\Handler\JsonContentHandler;
 use Zend\Diactoros\Response;
 
 class JsonContentHandlerTest extends ContentHandlerTestCase
@@ -23,7 +23,7 @@ class JsonContentHandlerTest extends ContentHandlerTestCase
     }
 
     /**
-     * @expectedException \Equip\Exception\HttpException
+     * @expectedException \Minormous\Exception\HttpException
      * @expectedExceptionCode 400
      * @expectedExceptionMessageRegExp /json.* syntax error/i
      */

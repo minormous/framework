@@ -1,10 +1,10 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
-use Equip\Adr\PayloadInterface;
-use Equip\Configuration\PayloadConfiguration;
-use Equip\Payload;
+use Minormous\Adr\PayloadInterface;
+use Minormous\Configuration\PayloadConfiguration;
+use Minormous\Payload;
 
 class PayloadConfigurationTest extends ConfigurationTestCase
 {

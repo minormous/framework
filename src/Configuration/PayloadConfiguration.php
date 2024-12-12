@@ -1,10 +1,10 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
-use Equip\Adr\PayloadInterface;
-use Equip\Payload;
+use Minormous\Adr\PayloadInterface;
+use Minormous\Framework\Payload;
 
 class PayloadConfiguration implements ConfigurationInterface
 {

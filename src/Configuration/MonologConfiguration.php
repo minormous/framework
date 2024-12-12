@@ -1,6 +1,6 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
 use Monolog\Logger;
@@ -23,7 +23,7 @@ class MonologConfiguration implements ConfigurationInterface
         $injector->share(Logger::class);
 
         $injector->define(Logger::class, [
-            ':name' => $this->env->getValue('LOGGER_NAME', 'equip')
+            ':name' => $this->env->getValue('LOGGER_NAME', 'minormous'),
         ]);
     }
 }

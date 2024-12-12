@@ -1,8 +1,8 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
-use Equip\Configuration\DiactorosConfiguration;
+use Minormous\Configuration\DiactorosConfiguration;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

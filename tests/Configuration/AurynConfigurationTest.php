@@ -1,10 +1,10 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
 use Auryn\Injector;
-use Equip\Configuration\AurynConfiguration;
-use Equip\Resolver\AurynResolver;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Resolver\AurynResolver;
 use Relay\ResolverInterface;
 
 class AurynConfigurationTest extends ConfigurationTestCase

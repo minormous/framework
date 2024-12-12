@@ -1,10 +1,10 @@
 <?php
 
-namespace Equip\Handler;
+namespace Minormous\Framework\Handler;
 
-use Equip\Directory;
-use Equip\Exception\HttpException;
-use Equip\Handler\ActionHandler;
+use Minormous\Directory;
+use Minormous\Exception\HttpException;
+use Minormous\Handler\ActionHandler;
 use FastRoute;
 use FastRoute\Dispatcher;
 use FastRoute\RouteCollector;
@@ -35,9 +35,9 @@ class DispatchHandler
         callable $next
     ) {
         /**
-         * @var $action Equip\Action
+         * @var $action Minormous\Action
          */
-        list($action, $args) = $this->dispatch(
+        [$action, $args] = $this->dispatch(
             $this->dispatcher(),
             $request->getMethod(),
             $request->getUri()->getPath()
@@ -59,7 +59,7 @@ class DispatchHandler
     {
         return FastRoute\simpleDispatcher(function (RouteCollector $collector) {
             foreach ($this->directory as $request => $action) {
-                list($method, $path) = explode(' ', $request, 2);
+                [$method, $path] = explode(' ', $request, 2);
 
                 $collector->addRoute(
                     $method,

@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
 use Auryn\Injector;
-use Equip\Configuration\MonologConfiguration;
+use Minormous\Configuration\MonologConfiguration;
 use Monolog\Logger;
 use PHPUnit_Framework_TestCase as TestCase;
 use Psr\Log\LoggerInterface;

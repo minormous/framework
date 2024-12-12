@@ -1,11 +1,11 @@
 <?php
 
-namespace EquipTests;
+namespace MinormousTests;
 
-use Equip\Adr\DomainInterface;
-use Equip\Directory;
-use Equip\Input;
-use Equip\Structure\Dictionary;
+use Minormous\Adr\DomainInterface;
+use Minormous\Framework\Directory;
+use Minormous\Framework\Input;
+use Minormous\Structure\Dictionary;
 
 class DirectoryTest extends DirectoryTestCase
 {
@@ -25,7 +25,7 @@ class DirectoryTest extends DirectoryTestCase
     }
 
     /**
-     * @expectedException \Equip\Exception\DirectoryException
+     * @expectedException \Minormous\Exception\DirectoryException
      * @expectedExceptionRegExp /entry .* is not an action/i
      */
     public function testInvalidAction()

@@ -1,6 +1,6 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
 use Whoops\Handler\JsonResponseHandler;
@@ -9,8 +9,6 @@ use Whoops\Run as Whoops;
 
 class WhoopsConfiguration implements ConfigurationInterface
 {
-    use EnvTrait;
-
     /**
      * @inheritDoc
      */
@@ -28,9 +26,7 @@ class WhoopsConfiguration implements ConfigurationInterface
      */
     public function prepareWhoops(Whoops $whoops)
     {
-        if($this->env->getValue('DEBUG_STACKTRACE', false) == true) {
-            set_error_handler([$whoops, Whoops::ERROR_HANDLER]);
-        }
+        set_error_handler([$whoops, Whoops::ERROR_HANDLER]);
 
         $whoops->writeToOutput(false);
         $whoops->allowQuit(false);

@@ -1,7 +1,7 @@
 <?php
-namespace EquipTests\Fake;
+namespace MinormousTests\Fake;
 
-use Equip\Input;
+use Minormous\Framework\Input;
 
 class FakeInput extends Input
 {

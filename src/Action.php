@@ -1,9 +1,9 @@
 <?php
 
-namespace Equip;
+namespace Minormous\Framework;
 
-use Equip\Input;
-use Equip\Responder\ChainedResponder;
+use Minormous\Framework\Input;
+use Minormous\Framework\Responder\ChainedResponder;
 
 class Action
 {

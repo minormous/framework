@@ -1,9 +1,9 @@
 <?php
 
-namespace Equip\Responder;
+namespace Minormous\Framework\Responder;
 
-use Equip\Adr\PayloadInterface;
-use Equip\Adr\ResponderInterface;
+use Minormous\Adr\PayloadInterface;
+use Minormous\Adr\ResponderInterface;
 use Lukasoppermann\Httpstatus\Httpstatus;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

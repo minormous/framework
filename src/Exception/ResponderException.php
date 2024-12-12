@@ -1,8 +1,8 @@
 <?php
 
-namespace Equip\Exception;
+namespace Minormous\Framework\Exception;
 
-use Equip\Adr\ResponderInterface;
+use Minormous\Adr\ResponderInterface;
 use InvalidArgumentException;
 
 class ResponderException extends InvalidArgumentException

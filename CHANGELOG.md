@@ -51,7 +51,7 @@ _..._
 
 ## 1.5.1 - 2016-03-11
 
-- Bump equip/adr dependency version to 1.3
+- Bump minormous/adr dependency version to 1.3
 
 ## 1.5.0 - 2016-03-01
 
@@ -65,11 +65,11 @@ _..._
 ## 1.3.0 - 2016-02-13
 
 - Upgrade Whoops exception handler to v2
-- Switch from `destrukt/destrukt` to `equip/structure`
+- Switch from `destrukt/destrukt` to `minormous/structure`
 
 ## 1.2.0 - 2016-02-11
 
-- `AbstractFormatter` and all its subclasses can now use the new `PayloadInterface` status codes added to equip/adr v1.1.0
+- `AbstractFormatter` and all its subclasses can now use the new `PayloadInterface` status codes added to minormous/adr v1.1.0
 
 ## 1.1.0 - 2016-01-08
 
@@ -77,4 +77,4 @@ _..._
 
 ## 1.0.0 - 2016-01-05
 
-- Changed from `Spark` to `Equip` namespace
+- Changed from `Spark` to `Minormous` namespace

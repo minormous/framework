@@ -1,8 +1,8 @@
 <?php
 
-namespace Equip\Handler;
+namespace Minormous\Framework\Handler;
 
-use Equip\Exception\HttpException;
+use Minormous\Exception\HttpException;
 use Relay\Middleware\JsonContentHandler as AbstractHandler;
 
 class JsonContentHandler extends AbstractHandler

@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests;
+namespace MinormousTests;
 
-use Equip\Exception\HttpException;
-use Equip\Router;
+use Minormous\Framework\Exception\HttpException;
+use Minormous\Framework\Router;
 use PHPUnit_Framework_TestCase as TestCase;
 use Zend\Diactoros\Response;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
-use Equip\Configuration\AurynConfiguration;
-use Equip\Configuration\RelayConfiguration;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Configuration\RelayConfiguration;
 use Relay\Relay;
 
 class RelayConfigurationTest extends ConfigurationTestCase

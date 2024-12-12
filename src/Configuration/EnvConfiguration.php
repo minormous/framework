@@ -1,10 +1,10 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
-use Equip\Env;
-use Equip\Exception\EnvException;
+use Minormous\Env;
+use Minormous\Exception\EnvException;
 use josegonzalez\Dotenv\Loader;
 
 class EnvConfiguration implements ConfigurationInterface

@@ -1,7 +1,7 @@
 <?php
-namespace EquipTests\Fake;
+namespace MinormousTests\Fake;
 
-use Equip\Responder\Responder;
+use Minormous\Framework\Responder\Responder;
 
 class FakeResponder extends Responder
 {

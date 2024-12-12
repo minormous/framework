@@ -1,8 +1,8 @@
 <?php
 
-namespace Equip\Formatter;
+namespace Minormous\Framework\Formatter;
 
-use Equip\Adr\PayloadInterface;
+use Minormous\Adr\PayloadInterface;
 
 abstract class HtmlFormatter implements FormatterInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
-use Equip\Formatter\PlatesFormatter;
-use Equip\Responder\FormattedResponder;
+use Minormous\Framework\Formatter\PlatesFormatter;
+use Minormous\Framework\Responder\FormattedResponder;
 
 class PlatesResponderConfiguration implements ConfigurationInterface
 {

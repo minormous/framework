@@ -1,10 +1,10 @@
 <?php
 
-namespace EquipTests\Responder;
+namespace MinormousTests\Responder;
 
-use Equip\Adr\Status;
-use Equip\Payload;
-use Equip\Responder\RedirectResponder;
+use Minormous\Adr\Status;
+use Minormous\Framework\Payload;
+use Minormous\Framework\Responder\RedirectResponder;
 use PHPUnit_Framework_TestCase as TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

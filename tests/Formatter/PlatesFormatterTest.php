@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Formatter;
+namespace MinormousTests\Formatter;
 
-use Equip\Adr\PayloadInterface;
-use Equip\Formatter\PlatesFormatter;
+use Minormous\Adr\PayloadInterface;
+use Minormous\Formatter\PlatesFormatter;
 use League\Plates\Engine;
 use PHPUnit_Framework_TestCase as TestCase;
 

@@ -1,20 +1,19 @@
 {
-    "name": "equip/framework",
+    "name": "minormous/framework",
     "description": "A tiny framework that can start anything.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Equip Contributors",
-            "homepage": "https://github.com/equip"
+            "name": "Minormous Contributors",
+            "homepage": "https://github.com/minormous"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.5",
-        "equip/adr": "^2.0",
-        "equip/config": "^1.0.2",
-        "equip/structure": "^1.0",
+        "php": ">=8.3",
+        "minormous/config": "dev-master",
+        "minormous/structure": "dev-master",
         "filp/whoops": "^2.0",
         "lukasoppermann/http-status": "^2",
         "nikic/fast-route": "^1.0",
@@ -22,14 +21,13 @@
         "rdlowrey/auryn": "^1.1",
         "relay/relay": "^1.1",
         "relay/middleware": "^1.0",
-        "willdurand/negotiation": "^2.0",
+        "willdurand/negotiation": "dev-php8",
         "psr/http-message": "^1.0"
     },
     "require-dev": {
         "josegonzalez/dotenv": "^2.0",
         "league/plates": "^3.1",
         "monolog/monolog": "^1.19",
-        "phpunit/phpunit": "^4.8|^5.0",
         "zendframework/zend-diactoros": "^1.0.4"
     },
     "suggest": {
@@ -39,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Equip\\": "src/"
+            "Minormous\\Framework\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "EquipTests\\": "tests/"
+            "MinormousTests\\": "tests/"
         }
     }
 }

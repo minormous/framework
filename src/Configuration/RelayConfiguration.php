@@ -1,9 +1,9 @@
 <?php
 
-namespace Equip\Configuration;
+namespace Minormous\Framework\Configuration;
 
 use Auryn\Injector;
-use Equip\Middleware\MiddlewareSet;
+use Minormous\Middleware\MiddlewareSet;
 use Relay\Relay;
 use Relay\RelayBuilder;
 use Relay\ResolverInterface;
@@ -16,7 +16,7 @@ class RelayConfiguration implements ConfigurationInterface
     public function apply(Injector $injector)
     {
         $injector->define(RelayBuilder::class, [
-            'resolver' => ResolverInterface::class
+            'resolver' => ResolverInterface::class,
         ]);
 
         $factory = function (RelayBuilder $builder, MiddlewareSet $queue) {

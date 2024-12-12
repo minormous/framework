@@ -1,13 +1,13 @@
 <?php
 
-namespace EquipTests;
+namespace MinormousTests;
 
 use Auryn\Injector;
-use Equip\Application;
-use Equip\Configuration\ConfigurationInterface;
-use Equip\Configuration\ConfigurationSet;
-use Equip\Directory;
-use Equip\Middleware\MiddlewareSet;
+use Minormous\Framework\Application;
+use Minormous\Configuration\ConfigurationInterface;
+use Minormous\Configuration\ConfigurationSet;
+use Minormous\Framework\Directory;
+use Minormous\Framework\Middleware\MiddlewareSet;
 use PHPUnit_Framework_TestCase as TestCase;
 use ReflectionObject;
 use Relay\MiddlewareInterface;

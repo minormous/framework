@@ -1,15 +1,15 @@
 <?php
 
-namespace EquipTests\Responder;
+namespace MinormousTests\Responder;
 
-use EquipTests\Configuration\ConfigurationTestCase;
-use Equip\Adr\PayloadInterface;
-use Equip\Adr\ResponderInterface;
-use Equip\Configuration\AurynConfiguration;
-use Equip\Exception\ResponderException;
-use Equip\Responder\ChainedResponder;
-use Equip\Responder\FormattedResponder;
-use Equip\Responder\RedirectResponder;
+use MinormousTests\Configuration\ConfigurationTestCase;
+use Minormous\Adr\PayloadInterface;
+use Minormous\Adr\ResponderInterface;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Exception\ResponderException;
+use Minormous\Responder\ChainedResponder;
+use Minormous\Responder\FormattedResponder;
+use Minormous\Responder\RedirectResponder;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 

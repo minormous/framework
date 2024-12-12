@@ -1,9 +1,9 @@
 <?php
 
-namespace Equip\Middleware;
+namespace Minormous\Framework\Middleware;
 
-use Equip\Exception\MiddlewareException;
-use Equip\Structure\Set;
+use Minormous\Exception\MiddlewareException;
+use Minormous\Structure\Set;
 
 class MiddlewareSet extends Set
 {

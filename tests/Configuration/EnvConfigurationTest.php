@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
-use Equip\Configuration\EnvConfiguration;
-use Equip\Env;
+use Minormous\Configuration\EnvConfiguration;
+use Minormous\Env;
 use josegonzalez\Dotenv\Loader;
 
 class EnvConfigurationTest extends ConfigurationTestCase
@@ -43,7 +43,7 @@ class EnvConfigurationTest extends ConfigurationTestCase
     }
 
     /**
-     * @expectedException \Equip\Exception\EnvException
+     * @expectedException \Minormous\Exception\EnvException
      * @expectedExceptionMessageRegExp /unable to automatically detect/i
      */
     public function testUnableToDetect()
@@ -52,7 +52,7 @@ class EnvConfigurationTest extends ConfigurationTestCase
     }
 
     /**
-     * @expectedException \Equip\Exception\EnvException
+     * @expectedException \Minormous\Exception\EnvException
      * @expectedExceptionMessageRegExp /environment file .* does not exist/i
      */
     public function testInvalidRoot()

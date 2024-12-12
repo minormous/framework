@@ -1,10 +1,10 @@
 <?php
 
-namespace EquipTests\Configuration;
+namespace MinormousTests\Configuration;
 
-use Equip\Configuration\AurynConfiguration;
-use Equip\Configuration\PlatesConfiguration;
-use Equip\Env;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Configuration\PlatesConfiguration;
+use Minormous\Env;
 use League\Plates\Engine;
 
 class PlatesConfigurationTest extends ConfigurationTestCase

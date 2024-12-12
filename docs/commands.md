@@ -1,12 +1,12 @@
 # Commands
 
-[equip/command](https://github.com/equip/command) is an optional library used for implementing [commands](https://sourcemaking.com/design_patterns/command) in Equip.
+[minormous/command](https://github.com/minormous/command) is an optional library used for implementing [commands](https://sourcemaking.com/design_patterns/command) in Minormous.
 
 ## Components
 
-[`CommandInterface`](https://github.com/equip/command/blob/master/src/CommandInterface.php) is an interface implemented by all command classes. It provides an [immutable](https://en.wikipedia.org/wiki/Immutable_object) structure containing command options that can ultimately be executed.
+[`CommandInterface`](https://github.com/minormous/command/blob/master/src/CommandInterface.php) is an interface implemented by all command classes. It provides an [immutable](https://en.wikipedia.org/wiki/Immutable_object) structure containing command options that can ultimately be executed.
 
-Many of the methods of [`CommandInterface`](https://github.com/equip/command/blob/master/src/CommandInterface.php) are implemented in [`AbstractCommand`](https://github.com/equip/command/blob/master/src/AbstractCommand.php), which serves as a base class for command class implementations.
+Many of the methods of [`CommandInterface`](https://github.com/minormous/command/blob/master/src/CommandInterface.php) are implemented in [`AbstractCommand`](https://github.com/minormous/command/blob/master/src/AbstractCommand.php), which serves as a base class for command class implementations.
 
 ### Getting Options
 
@@ -45,7 +45,7 @@ if ($command->hasOption('option_name')) {
 }
 ```
 
-The `requiredOptions()` method is intended to be used internally by the `options()` method to confirm that all required options are present. More specifically, `requiredOptions()` returns an array of strings and `options()` checks that each value from that array exists as a key in the options of the command instance. If not, `options()` will throw an instance of [`CommandException`](https://github.com/equip/command/blob/master/src/CommandException.php).
+The `requiredOptions()` method is intended to be used internally by the `options()` method to confirm that all required options are present. More specifically, `requiredOptions()` returns an array of strings and `options()` checks that each value from that array exists as a key in the options of the command instance. If not, `options()` will throw an instance of [`CommandException`](https://github.com/minormous/command/blob/master/src/CommandException.php).
 
 ### Executing Commands
 
@@ -60,7 +60,7 @@ $result = $command->execute();
 Here's an example of a command class.
 
 ```php
-use Equip\Command\AbstractCommand;
+use Minormous\Command\AbstractCommand;
 
 class FizzbuzzCommand extends AbstractCommand
 {
@@ -84,7 +84,7 @@ class FizzbuzzCommand extends AbstractCommand
 Command classes are tended to be injected (using [Auryn](/en/latest/#dependencies)) into and receive options from other classes. Here's an example of a domain class that does this.
 
 ```php
-use Equip\Adr\DomainInterface;
+use Minormous\Adr\DomainInterface;
 
 class MyDomain implements DomainInterface
 {

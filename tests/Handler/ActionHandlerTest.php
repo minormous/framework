@@ -1,11 +1,11 @@
 <?php
-namespace EquipTests\Handler;
+namespace MinormousTests\Handler;
 
-use Equip\Action;
-use Equip\Configuration\AurynConfiguration;
-use Equip\Handler\ActionHandler;
-use EquipTests\Configuration\ConfigurationTestCase;
-use EquipTests\Fake\FakeDomain;
+use Minormous\Framework\Action;
+use Minormous\Configuration\AurynConfiguration;
+use Minormous\Framework\Handler\ActionHandler;
+use MinormousTests\Configuration\ConfigurationTestCase;
+use MinormousTests\Fake\FakeDomain;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequest;
 

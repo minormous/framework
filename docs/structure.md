@@ -1,7 +1,7 @@
 # Structure
 
-[equip/structure](https://github.com/equip/structure) is an optional library for
-using [immutable][wiki-immutable] data structures. It can be used with Equip or
+[minormous/structure](https://github.com/minormous/structure) is an optional library for
+using [immutable][wiki-immutable] data structures. It can be used with Minormous or
 as a stand alone dependency.
 
 **`Dictionary`** is an implementation of a [associative array][wiki-dict] that
@@ -54,7 +54,7 @@ that all structures implement. This interface provides two additional methods:
 * **`toArray`** can be used to convert any structure to an array.
 * **`isSimilar`** can be used to check if two structures are of the same type.
 
-[struct-interface]: https://github.com/equip/structure/blob/master/src/StructureInterface.php
+[struct-interface]: https://github.com/minormous/structure/blob/master/src/StructureInterface.php
 
 Each structure also has its own distinct interface but all structures have the
 following methods, with variations in signature:
@@ -74,7 +74,7 @@ This makes all structures familiar and easy to work with.
 Dictionaries can be created from associative arrays:
 
 ```php
-use Equip\Structure\Dictionary;
+use Minormous\Structure\Dictionary;
 
 $dict = new Dictionary([
     'color' => 'yellow',
@@ -119,7 +119,7 @@ $dict->hasValue('speed'); // false
 Lists can be created from non-associative arrays:
 
 ```php
-use Equip\Structure\UnorderedList;
+use Minormous\Structure\UnorderedList;
 
 $list = new UnorderedList([
     'eggs',
@@ -164,7 +164,7 @@ The primary difference between an `OrderedList` and `UnorderedList` is that an
 ordered list will always be sorted as new values are added:
 
 ```php
-use Equip\Structure\OrderedList;
+use Minormous\Structure\OrderedList;
 
 $list = new OrderedList([
     'rice',
@@ -181,7 +181,7 @@ A custom ordering method can be defined by extending the `OrderedList` class and
 changing the `sortValues` method:
 
 ```php
-use Equip\Structure\OrderedList;
+use Minormous\Structure\OrderedList;
 
 class UserList extends OrderedList
 {
@@ -230,7 +230,7 @@ print_r($users->toArray());
 Sets can be created from non-associative arrays:
 
 ```php
-use Equip\Structure\Set;
+use Minormous\Structure\Set;
 
 $set = new UnorderedList([
     'eggs',

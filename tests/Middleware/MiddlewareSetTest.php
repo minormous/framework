@@ -1,9 +1,9 @@
 <?php
 
-namespace EquipTests\Middleware;
+namespace MinormousTests\Middleware;
 
-use Equip\Exception\MiddlewareException;
-use Equip\Middleware\MiddlewareSet;
+use Minormous\Exception\MiddlewareException;
+use Minormous\Middleware\MiddlewareSet;
 use PHPUnit_Framework_TestCase as TestCase;
 use Relay\MiddlewareInterface;
 use stdClass;

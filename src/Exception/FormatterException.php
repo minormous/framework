@@ -1,8 +1,8 @@
 <?php
 
-namespace Equip\Exception;
+namespace Minormous\Framework\Exception;
 
-use Equip\Formatter\FormatterInterface;
+use Minormous\Formatter\FormatterInterface;
 use InvalidArgumentException;
 
 class FormatterException extends InvalidArgumentException
@@ -26,11 +26,11 @@ class FormatterException extends InvalidArgumentException
       *
       * @return static
       */
-     public static function needsQuality($formatter)
-     {
-         return new static(sprintf(
-             'No quality have been set for the `%s` formatter',
-             $formatter
-         ));
-     }
+    public static function needsQuality($formatter)
+    {
+        return new static(sprintf(
+            'No quality have been set for the `%s` formatter',
+            $formatter
+        ));
+    }
 }

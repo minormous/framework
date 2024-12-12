@@ -1,8 +1,8 @@
 <?php
 
-namespace Equip;
+namespace Minormous\Framework;
 
-use Equip\Adr\InputInterface;
+use Minormous\Adr\InputInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 class Input implements InputInterface

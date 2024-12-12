@@ -1,8 +1,8 @@
 <?php
 
-namespace EquipTests;
+namespace MinormousTests;
 
-use Equip\Payload;
+use Minormous\Framework\Payload;
 use PHPUnit_Framework_TestCase as TestCase;
 
 class PayloadTest extends TestCase
