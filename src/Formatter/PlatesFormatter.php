@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Formatter;
+namespace Minormous\Formatter;
 
 use Minormous\Formatter\HtmlFormatter;
 use League\Plates\Engine;

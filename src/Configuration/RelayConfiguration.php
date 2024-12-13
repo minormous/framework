@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Configuration;
+namespace Minormous\Configuration;
 
 use Auryn\Injector;
 use Minormous\Middleware\MiddlewareSet;

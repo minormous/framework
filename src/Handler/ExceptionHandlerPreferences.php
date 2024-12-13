@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Handler;
+namespace Minormous\Handler;
 
 use Minormous\Structure\Dictionary;
 use Whoops\Handler\JsonResponseHandler;

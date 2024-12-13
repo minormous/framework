@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework;
+namespace Minormous;
 
 use Minormous\Contract\ActionInterface;
 use Minormous\Exception\DirectoryException;

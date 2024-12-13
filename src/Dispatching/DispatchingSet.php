@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Dispatching;
+namespace Minormous\Dispatching;
 
 use Auryn\Injector;
 use Minormous\Directory;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Exception;
+namespace Minormous\Exception;
 
 use Minormous\Formatter\FormatterInterface;
 use InvalidArgumentException;

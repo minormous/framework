@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Formatter;
+namespace Minormous\Formatter;
 
 use Minormous\Adr\PayloadInterface;
 

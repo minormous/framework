@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Contract;
+namespace Minormous\Contract;
 
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;

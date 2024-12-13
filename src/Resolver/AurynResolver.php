@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Resolver;
+namespace Minormous\Resolver;
 
 use Auryn\Injector;
 use Relay\ResolverInterface;

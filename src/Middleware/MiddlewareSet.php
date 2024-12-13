@@ -1,6 +1,6 @@
 <?php
 
-namespace Minormous\Framework\Middleware;
+namespace Minormous\Middleware;
 
 use Minormous\Exception\MiddlewareException;
 use Minormous\Structure\Set;
